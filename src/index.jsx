@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import Bet from './components/Bet';
 import Rankings from './components/Rankings';
+import Login from './components/Login';
 
 // temporary for dev matters
 const data = {
@@ -75,10 +76,11 @@ ReactDOM.render(
   //   games={data.games}
   //   teams={data.teams}
   // />,
-  <Rankings
-    users={data.users}
-    pronos={data.pronos}
-    results={data.results}
-  />,
+  // <Rankings
+  //   users={data.users}
+  //   pronos={data.pronos}
+  //   results={data.results}
+  // />,
+  <Login />,
   document.getElementById('app')
 );

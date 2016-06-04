@@ -8,7 +8,7 @@ class Bet extends React.Component {
     return this.props.teams[teamId].teamName;
   }
   displayGame(game) {
-    return (<div className={`game${game.id}`}>
+    return (<div className={`game${game.id}`} key={game.id}>
       <h4>Game {game.id}</h4>
       <p>{this.getTeamName(game.teamId1)} - {this.getTeamName(game.teamId2)}</p>
       <div className="pronos">

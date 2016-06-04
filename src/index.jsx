@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import Bet from './components/Bet';
+import Bet from './components/Bet';
 import Rankings from './components/Rankings';
 import Login from './components/Login';
 
@@ -70,17 +70,17 @@ const data = {
 
 
 ReactDOM.render(
-  // <Bet
-  //   activeUser={data.activeUser}
-  //   pronos={data.pronos.filter((pron) => pron.userId === data.activeUser)}
-  //   games={data.games}
-  //   teams={data.teams}
-  // />,
+  <Bet
+    activeUser={data.activeUser}
+    pronos={data.pronos.filter((pron) => pron.userId === data.activeUser)}
+    games={data.games}
+    teams={data.teams}
+  />,
   // <Rankings
   //   users={data.users}
   //   pronos={data.pronos}
   //   results={data.results}
   // />,
-  <Login />,
+  // <Login />,
   document.getElementById('app')
 );
